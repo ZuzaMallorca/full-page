@@ -152,3 +152,32 @@
     grid-template-areas: "section" "sideBlock";
      }
     }    
+    /* VERSION PARA MOBILES */
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+
+.main {
+ display: grid;
+grid-template-columns: 1fr;
+ grid-template-rows: 1fr 1fr;
+grid-template-areas: "section" "sideBlock";
+ }
+.header {
+ display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: "menu" "text";
+ }
+ .menu {
+ display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: "block1" "block2" "block3";
+ }
+  .section {
+ display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "object1" "object2" "object3" "object4" "navigation";
+ }
+}
