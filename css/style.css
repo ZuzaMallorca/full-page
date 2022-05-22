@@ -141,4 +141,14 @@
     .longText {
     background-color: #EE5007;
     }
-    
+
+/* VERSION PARA TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+     .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "section" "sideBlock";
+     }
+    }    
