@@ -20,7 +20,6 @@ body{
     align-items: center;
     text-align: center;
 }
-
 .header {
     width:100%;
     background-repeat: no-repeat;
@@ -30,7 +29,6 @@ body{
     grid-area: header;
     display: grid;
     grid-gap: 10px;
-    justify-items: center;
     align-items: stretch;
      grid-template-columns: 1fr;
      grid-template-rows: 1fr 1fr;
@@ -124,12 +122,14 @@ ul li a:hover{
 .main {
     background-color: white;
     grid-area: main;
+    align-items: stretch;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
      "section sideBlock";     
+   
 }
 
 .section {
@@ -205,7 +205,8 @@ ul li a:hover{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     margin-left:5px;
-    align-self: start;
+    height:auto;
+
 }
 
 .text1 {
@@ -273,20 +274,6 @@ ul li a:hover{
     grid-row: 2 / -1;
     }
    } 
-
-/*.header {
-    display:flex;
-    flex-flow: column wrap;
-    height: auto;
-    width: auto;
-}
-.menu {
-    flex-flow: column wrap;
-    display: flex;
-    height: auto;
-    width: auto;
-}*/
-
 
 /* VERSION PARA MOBILES */
 @media only screen and (max-width: 767px) {
