@@ -30,6 +30,7 @@ body{
     display: grid;
     grid-gap: 10px;
     align-items: stretch;
+    justify-content: center;
      grid-template-columns: 1fr;
      grid-template-rows: 1fr 1fr;
      grid-template-areas: "menu menu menu" "text text text";
@@ -96,29 +97,24 @@ ul li a:hover{
 .socials a:hover{
     color:hsl(6, 78%, 66%);
 }
-.section{
-    position:relative;
-}
 .text {
     grid-area: text;
     display:grid;
-    align-items: center;
     background-color: rgb(211,211,211, 0.5);
     width:auto;
     text-align:center;
-    justify-content: center;
     align-self:end;
+    justify-self: center;
     position:absolute;
 }
 
  h1 {
     color: hsl(6, 78%, 66%, 0.5);
     width:auto;
-    animation-iteration-count: 1;
-    animation-name: changing-name;
-    animation-duration: 6s;
     align-content: center;
+    justify-content: center;
 }
+
 .main {
     background-color: white;
     grid-area: main;
@@ -251,12 +247,6 @@ ul li a:hover{
       transform: translate3d(4px, 0, 0);
       background-color: rgb(226, 216, 216);
     }
-  }
-  @keyframes changing-color{
-      10%, 90% {color: hsl(6, 78%, 66%, 0.5);}
-      20%, 80%{color: rgba(202, 56, 100, 0.5);}
-      30%, 70% {color: rgba(168, 14, 60, 0.5);}
-      40%, 60% {color:  rgba(202, 56, 100, 0.5);}
   }
 
 /* VERSION PARA TABLET */
